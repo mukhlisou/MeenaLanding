@@ -1,0 +1,381 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+html{
+	scroll-behavior: smooth;	
+}
+.btn-primary {
+	background-color: #00ACC1;
+	border-color: #00ACC1;
+}
+
+/*Navbar*/
+
+.navbar {
+	position: relative;
+	z-index: 1;
+}
+
+.navbar-brand {
+	font-family: Viga;
+	font-size: 32px;
+}
+
+/* Jumbotron*/
+
+.jumbotron {
+	background-image: url(img/jumbotron-bg2.jpg);
+	background-size: cover;
+	height: 540px;
+	text-align: center;
+	position: relative;
+}
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 70%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	position: absolute;
+	bottom: 0;
+}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron .display-4 {
+	color: white;
+	margin-top: 150px;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+
+.about-meena h4 {
+	margin-bottom: 20px;
+}
+
+.title::before {
+	content: '';
+	background: #00ACC1;
+	height: 2px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10 px;
+	display: block;
+	transform: translateY(80px);
+}
+
+.title::after {
+	content: '';
+	background: #00ACC1;
+	height: 7px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10 px;
+	display: block;
+	transform: translateY(8px);
+}
+
+.title {
+	margin-top: 20px;
+}
+
+.why {
+	background-color: #eceff1;
+	padding: 60px 0px;
+}
+
+.why-item {
+	margin-top: 50px;
+	padding: 0px 20px;
+}
+
+.card-img-top{
+	height: 250px;
+	width: auto;
+	border-radius: 10px 10px 0px 0px;
+}
+.card-deck{
+	margin: 100px 20px;
+
+}
+.card{
+	border-radius: 10px ;
+}
+.card-text{
+	
+	color: #455a64;
+}
+.footer {
+	background-color: #455a64;
+	padding: 30px 0px;
+	color: white;
+
+}
+.footer-content{
+	margin: 0px 20px;
+}
+
+.footer h4{
+	font-weight: 200;
+}
+.footer-bottom{
+	background: #343a40;
+	color: #686868;
+	height: 50px;
+	text-align: center;
+	bottom: 0px;
+	left: 0px;
+	padding-top: 20px;
+}
+
+/*Info Panel*/
+
+.info-panel {
+	box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 12px;
+	margin-top: -100px;
+	background-color: white;
+	padding: 30px;
+}
+
+.info-panel img {
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.info-panel h4 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.info-panel p {
+	font-size: 14px;
+	color: #ACACAC;
+	font-weight: 200;
+	margin-top: -5px;
+}
+
+.workingspace {
+	margin-top: 120px;
+	text-align: center;
+	margin-bottom: 120px;
+}
+
+.workingspace h3 {
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.workingspace h3 span {
+	font-weight: 500;
+}
+
+.workingspace p {
+	font-size: 18px;
+	color: #455a64;
+	font-weight: 200;
+	margin: 25px 0;
+}
+
+.about-meena {
+	margin-bottom: 120px;
+}
+
+
+/*utility */
+
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+}
+/*DESKTOP VERSION*/
+
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link {
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #00ACC1;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 5px;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -75px;
+		height: 740px;
+	}
+	.jumbotron .diplay-4 {
+		font-size: 62px;
+	}
+	.workingspace {
+		text-align: left;
+	}
+	.why-item {
+		margin-top: 50px;
+		padding: 0px 50px;
+	}
+	.footer{
+		padding: 60px 0px;
+	}
+}
+
+.stretch-card>.card {
+	width: 100%;
+	min-width: 100%
+}
+
+
+.btn.btn-social-icon {
+	width: 40px;
+	height: 40px;
+	padding: 0
+}
+
+.btn.btn-rounded {
+	border-radius: 50px
+}
+
+.btn-outline-facebook {
+	border: 1px solid #3b579d;
+	color: #3b579d
+}
+
+.btn-outline-facebook:hover {
+	background: #3b579d;
+	color: #ffffff
+}
+
+.btn-outline-youtube {
+	border: 1px solid #e52d27;
+	color: #e52d27
+}
+
+.btn-outline-twitter {
+	border: 1px solid #2caae1;
+	color: #2caae1
+}
+
+.btn-outline-dribbble {
+	border: 1px solid #ea4c89;
+	color: #ea4c89
+}
+
+.btn-outline-linkedin {
+	border: 1px solid #0177b5;
+	color: #0177b5
+}
+
+.btn-outline-instagram {
+	border: 1px solid #dc4a38;
+	color: #dc4a38
+}
+
+.btn-outline-twitter:hover {
+	background: #2caae1;
+	color: #ffffff
+}
+
+.btn-outline-linkedin:hover {
+	background: #0177b5;
+	color: #ffffff
+}
+
+.btn-outline-youtube:hover {
+	background: #e52d27;
+	color: #ffffff
+}
+
+.btn-outline-instagram:hover {
+	background: #e52d27;
+	color: #ffffff
+}
+
+.btn-facebook {
+	background: #3b579d;
+	color: #ffffff
+}
+
+.btn-youtube {
+	background: #e52d27;
+	color: #ffffff
+}
+
+.btn-twitter {
+	background: #2caae1;
+	color: #ffffff
+}
+
+.btn-dribbble {
+	background: #ea4c89;
+	color: #ffffff
+}
+
+.btn-linkedin {
+	background: #0177b5;
+	color: #ffffff
+}
+
+.btn-instagram {
+	background: #dc4a38;
+	color: #ffffff
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+	background: #2d4278;
+	color: #ffffff
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus {
+	background: #c21d17;
+	color: #ffffff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+	background: #1b8dbf;
+	color: #ffffff
+}
+
+.btn-dribbble:hover,
+.btn-dribbble:focus {
+	background: #e51e6b;
+	color: #ffffff
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+	background: #015682;
+	color: #ffffff
+}
+
+.btn-instagram:hover,
+.btn-instagram:focus {
+	background: #bf3322;
+	color: #ffffff
+}
